@@ -29,10 +29,10 @@ module.exports = function extract_order() {
       const unitPrice = prices[i] || 0;
       const qty = quantities[i] || 1;
       return {
-        'Product Name': name,
-        'Unit Price': unitPrice.toFixed(2),
-        'Quantity': qty.toString(),
-        'Line Total': (unitPrice * qty).toFixed(2)
+        "Product Name": name,
+        "Unit Price": unitPrice.toFixed(2),
+        "Quantity": qty.toString(),
+        "Line Total": (unitPrice * qty).toFixed(2)
       };
     });
 
@@ -57,13 +57,13 @@ module.exports = function extract_order() {
     }
 
     const orderDetails = {
-      'Order Number': orderNumber,
+      "Order Number": orderNumber,
       "Products": products,
       "Shipping": '0',
       "Subtotal": subtotal,
-      'Grand Total': grandTotal,
+      "Grand Total": grandTotal,
       "Tax": taxAmount,
-      'Payment Type': detectPaymentMethod()
+      "Payment Type": detectPaymentMethod()
     };
 
     console.log('Order Details:', orderDetails);
