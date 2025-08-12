@@ -1,4 +1,4 @@
-# Rakuten Melbourne Engineer Code Test D
+# Code Test
 * Your main objective is to extract an Order and its details from the provided HTML `walmart_order.html`.
 * The extracted data should match the structure and data of the Order object defined in `test.js`.
 * Edit only `extract_order.js` to implement your solution.
